@@ -56,7 +56,17 @@ local function file_info()
   end
   local line = vim.fn.line(".")
   local total_lines = vim.fn.line("$")
-  return string.format("󰋇 %d/%d ", line, total_lines)
+
+  local position
+  if line == 1 then
+    position = "󰋇 Top"
+  elseif line == total_lines then
+    position = "󰋇 Bot"
+  else
+    position = string.format("󰋇 %d/%d", line, total_lines)
+  end
+
+  return position
 end
 
 local function left_island()
