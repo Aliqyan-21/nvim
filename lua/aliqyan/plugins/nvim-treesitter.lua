@@ -34,6 +34,7 @@ return {
           "dockerfile",
           "gitignore",
           "cpp",
+          "haskell",
         },
         incremental_selection = {
           enable = false,
