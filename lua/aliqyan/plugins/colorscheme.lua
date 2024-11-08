@@ -108,8 +108,8 @@ return {
         glow = false,
         colors = {
           line_nr = "#505050",
-          -- comment = "#86A789",
-          comment = "#a6a2a2",
+          -- comment = "#a6a2a2",
+          comment = "#989898",
           plugins = {
             nvim_cmp = false,
           },

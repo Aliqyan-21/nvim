@@ -35,9 +35,6 @@ keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
--- Select all
-keymap.set("n", "<C-a>", "gg<S-v>G")
-
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
