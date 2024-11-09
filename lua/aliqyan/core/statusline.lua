@@ -54,6 +54,7 @@ local function file_info()
   if filename == "" then
     filename = "[No Name]"
   end
+
   local line = vim.fn.line(".")
   local total_lines = vim.fn.line("$")
 
