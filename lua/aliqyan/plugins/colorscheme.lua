@@ -104,7 +104,7 @@ return {
     priority = 1000,
     config = function()
       require("darkvoid").setup({
-        transparent = true,
+        transparent = false,
         glow = false,
         colors = {
           line_nr = "#505050",

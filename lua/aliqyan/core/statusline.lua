@@ -100,3 +100,11 @@ function Statusline()
 end
 
 vim.opt.statusline = "%!v:lua.Statusline()"
+
+-- Auto command to refresh statusline on buffer enter
+vim.cmd([[
+  augroup UpdateStatusline
+    autocmd!
+    autocmd BufEnter * lua vim.opt.statusline = "%!v:lua.Statusline()"
+  augroup END
+]])
