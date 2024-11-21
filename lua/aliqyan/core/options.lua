@@ -68,4 +68,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 opt.swapfile = false
 
 -- turn spellcheck
-opt.spelllang = en_us
+-- opt.spelllang = en_us
+
+-- scrolling
+opt.scrolloff = 10
