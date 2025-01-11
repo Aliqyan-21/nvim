@@ -9,9 +9,9 @@ local function mode()
   local modes = {
     n = "",
     i = "",
-    v = "",
-    V = " 󰫹",
-    [""] = " 󰫯",
+    v = "",
+    V = "󰬃",
+    [""] = " ",
     c = "",
     R = "󰬙",
     t = "󰬁",
@@ -60,11 +60,11 @@ local function file_info()
 
   local position
   if line == 1 then
-    position = "󰋇 Top"
+    position = "󰋇  [Top]"
   elseif line == total_lines then
-    position = "󰋇 Bot"
+    position = "󰋇  [Bot]"
   else
-    position = string.format("󰋇 %d/%d", line, total_lines)
+    position = string.format("󰋇  [%d/%d]", line, total_lines)
   end
 
   return position
@@ -84,7 +84,7 @@ end
 local function right_island()
   return table.concat({
     "%#StatuslineRight#",
-    " %f ",
+    "  %f ",
     file_info(),
   })
 end
